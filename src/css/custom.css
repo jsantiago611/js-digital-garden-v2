@@ -1,0 +1,218 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #00beff;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #00beff;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+[data-theme="dark"] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@font-face {
+  font-family: "PolySans";
+  src: url("/font/PolySansUS-Median.woff2") format("woff2");
+  display: swap;
+}
+
+@font-face {
+  font-family: "GT-Display";
+  src: url("/font/GT-Super-Display-Bold.woff2") format("woff2");
+  display: swap;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "GT-Text";
+  src: url("/font/GT-Super-Text-Regular.woff2") format("woff2");
+  display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Text";
+  src: url("/font/GT-Super-Text-Book.woff2") format("woff2");
+  display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Text";
+  src: url("/font/GT-Super-Text-Book-Italic.woff2") format("woff2");
+  display: swap;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GT-Text";
+  src: url("/font/GT-Super-Text-Medium.woff2") format("woff2");
+  display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Text";
+  src: url("/font/GT-Super-Text-Medium-Italic.woff2") format("woff2");
+  display: swap;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GT-Text";
+  src: url("/font/GT-Super-Text-Bold.woff2") format("woff2");
+  display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Basis";
+  src: url("/font/basis-grotesque-regular-pro.woff2") format("woff2");
+  display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Basis";
+  src: url("/font/basis-grotesque-bold-pro.woff2") format("woff2");
+  display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Basis";
+  src: url("/font/basis-grotesque-bold-italic-pro.woff2") format("woff2");
+  display: swap;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("/font/Ogg-Roman.woff2") format("woff2");
+  display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("/font/Ogg-Italic.woff2") format("woff2");
+  display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GT-America";
+  src: url("/font/GT-America-Standard-Bold.woff2") format("woff2");
+  display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-America";
+  src: url("/font/GT-America-Standard-Regular-Italic.woff2") format("woff2");
+  display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GT-America";
+  src: url("/font/GT-America-Standard-Regular.woff2") format("woff2");
+  display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Ogg";
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "GT-America";
+}
+
+p {
+  font-family: "GT-Text";
+}
+
+.blogPostData_node_modules-\@docusaurus-theme-classic-lib-next-theme-BlogPostItem-styles-module {
+  font-family: "GT-America";
+}
+
+.tagRegular_node_modules-\@docusaurus-theme-classic-lib-next-theme-Tag-styles-module {
+  font-family: "GT-America";
+}
+
+.breadcrumbs__link {
+  font-family: "GT-America";
+}
+
+.menu__link,
+.menu__caret {
+  font-family: "GT-America";
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  font-weight: bold;
+}
+
+.menu__list-item-collapsible .menu__link:hover,
+.menu__list-item-collapsible .menu__link--active {
+  font-weight: bold;
+}
+
+.navbar__title {
+  font-family: "GT-America";
+}
+
+.hash-link {
+  font-family: "GT-America";
+}
+
+.blogPostTitle_node_modules-\@docusaurus-theme-classic-lib-next-theme-BlogPostItem-styles-module {
+  font-family: "Ogg" !important;
+}
