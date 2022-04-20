@@ -125,6 +125,22 @@
 }
 
 @font-face {
+  font-family: "Ogg-Text";
+  src: url("/font/OggText-BookItalic.woff") format("woff");
+  display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ogg-Text";
+  src: url("/font/OggText-Bold.woff") format("woff");
+  display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "GT-America";
   src: url("/font/GT-America-Standard-Regular-Italic.woff2") format("woff2");
   display: swap;
